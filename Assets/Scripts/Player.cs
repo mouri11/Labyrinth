@@ -10,6 +10,9 @@ public class Player : MonoBehaviour {
 	//Rigidbody rigidbody;
 	Vector3 velocity;
 
+    [SerializeField]
+    GameObject bloodUI;
+
     void Awake()
     {
         if (instance != null)
@@ -48,6 +51,7 @@ public class Player : MonoBehaviour {
         currentHealth -= amt;
         if (amt <= 0) {
             Debug.Log("PLAYER DEAD");
+            bloodUI.GetComponent<Animation>().Play("bloodUI");
         }
     }
 }
