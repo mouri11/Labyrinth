@@ -20,15 +20,11 @@ public class Player : MonoBehaviour {
         {
             instance = this;
         }
-        Debug.Log("Instance initialized");
+        maxHealth = 100;
+        currentHealth = maxHealth;
     }
 
     void Start () {
-        Debug.Log("Player init");
-		//rigidbody = GetComponent<Rigidbody> ();
-
-        maxHealth = 100;
-        currentHealth = maxHealth;
 	}
 
 	void Update () {
@@ -43,6 +39,7 @@ public class Player : MonoBehaviour {
 
     public bool isAlive()
     {
+        Debug.Log(currentHealth);
         return currentHealth > 0;
     }
 }

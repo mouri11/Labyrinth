@@ -20,6 +20,10 @@ public class Enemy : MonoBehaviour {
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
+        thePlayer = GameObject.FindGameObjectWithTag("Player").transform;
+        if (thePlayer == null) {
+            Debug.Log("No GameObject tagged Player");
+        }
 
         currenthealth = maxHealth;
     }
