@@ -1287,7 +1287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55c3665edc40b4298bdf6409a804db0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloodUI: {fileID: 0}
+  bloodAnim: {fileID: 1276647885}
 --- !u!4 &1220555697 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 2}
@@ -1336,11 +1336,11 @@ Animation:
   m_GameObject: {fileID: 1276647883}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: edec5ce1d3786c94d9ddc6f34128c92f, type: 2}
+  m_Animation: {fileID: 0}
   m_Animations:
-  - {fileID: 7400000, guid: edec5ce1d3786c94d9ddc6f34128c92f, type: 2}
+  - {fileID: 7400000, guid: a037e1a540cf6624bad448268af16923, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 0
+  m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!114 &1276647886

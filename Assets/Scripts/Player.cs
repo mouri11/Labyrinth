@@ -11,7 +11,7 @@ public class Player : MonoBehaviour {
 	Vector3 velocity;
 
     [SerializeField]
-    GameObject bloodUI;
+    Animation bloodAnim;
 
     void Awake()
     {
@@ -28,12 +28,21 @@ public class Player : MonoBehaviour {
     }
 
     void Start () {
-	}
+        /*
+        Debug.Log("Playing the anim");
+        bloodAnim.Play("deathAnim");
+        */
+    }
 
 	void Update () {
 		//velocity = new Vector3 (Input.GetAxisRaw ("Horizontal"), 0, Input.GetAxisRaw ("Vertical")).normalized * 10;
 
         Cursor.lockState = CursorLockMode.Locked;
+
+        /*
+        if (Input.GetKeyDown(KeyCode.T))
+            bloodAnim.Play("deathAnim");
+            */
     }
 
 	void FixedUpdate() {
@@ -42,16 +51,23 @@ public class Player : MonoBehaviour {
 
     public bool isAlive()
     {
-        Debug.Log(currentHealth);
         return currentHealth > 0;
     }
 
     public void TakeDamage(int amt)
     {
+        if (!isAlive())
+            return;
         currentHealth -= amt;
-        if (amt <= 0) {
-            Debug.Log("PLAYER DEAD");
-            bloodUI.GetComponent<Animation>().Play("bloodUI");
+        if (currentHealth <= 0) {
+            bloodAnim.Play("deathAnim");
+            StartCoroutine(Retry());
         }
+    }
+
+    IEnumerator Retry()
+    {
+        yield return new WaitForSeconds(1.0f);
+        Debug.Log("Restart");
     }
 }
