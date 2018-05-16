@@ -46,13 +46,22 @@ public class Enemy : MonoBehaviour {
     bool playerInSight()
     {
         // TODO: Implement this
-        return true;
+        return Player.instance.isAlive();
+        //return true;
     }
 
     public void TakeDamage(int damage)
     {
         currenthealth -= damage;
         if (currenthealth <= 0) {
+            Die();
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player") {
+            Player.instance.TakeDamage(200);
             Die();
         }
     }

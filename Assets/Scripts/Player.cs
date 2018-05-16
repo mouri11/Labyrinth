@@ -42,4 +42,12 @@ public class Player : MonoBehaviour {
         Debug.Log(currentHealth);
         return currentHealth > 0;
     }
+
+    public void TakeDamage(int amt)
+    {
+        currentHealth -= amt;
+        if (amt <= 0) {
+            Debug.Log("PLAYER DEAD");
+        }
+    }
 }
