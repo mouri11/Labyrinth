@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
@@ -68,6 +69,8 @@ public class Player : MonoBehaviour {
     IEnumerator Retry()
     {
         yield return new WaitForSeconds(1.0f);
+        Cursor.lockState = CursorLockMode.Confined;
+        SceneManager.LoadScene("GameName");
         Debug.Log("Restart");
     }
 }
