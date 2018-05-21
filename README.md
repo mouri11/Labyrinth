@@ -1,5 +1,7 @@
 # Labyrinth
 
+![img](screenshots/screenshot_1.png)
+
 A First Person Shooter made with Unity 2018.
 
 # Team Members
