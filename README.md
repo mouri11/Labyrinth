@@ -4,6 +4,13 @@
 
 ![img](screenshots/screenshot_1.png)
 
+### Screnshots
+
+![img](screenshots/screenshot_2.png)
+![img](screenshots/screenshot_3.png)
+![img](screenshots/screenshot_4.png)
+![img](screenshots/screenshot_5.png)
+
 # Team Members
 
 Labyrinth was a part of our final year project, the group consists of:
