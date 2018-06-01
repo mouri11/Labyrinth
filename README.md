@@ -19,3 +19,6 @@ Labyrinth was a part of our final year project, the group consists of:
 * Rudra Nil Basu
 * Sumitra Chowdhury
 
+### LICENSE
+
+GPL v2
