@@ -21,4 +21,4 @@ Labyrinth was a part of our final year project, the group consists of:
 
 ### LICENSE
 
-GPL v2
+[GPL v2](https://github.com/PhoenixRRDS/Labyrinth/blob/master/LICENSE)
