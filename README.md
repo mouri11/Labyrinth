@@ -2,7 +2,7 @@
 
 > A First Person Shooter made with Unity 2018.
 
-![img](screenshots/screenshot_1.png)
+![img](screenshots/banner.png)
 
 ### Screnshots
 
