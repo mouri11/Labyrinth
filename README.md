@@ -13,7 +13,7 @@
 
 # Team Members
 
-Labyrinth was a part of our final year project, the group consists of:
+Labyrinth was a part of our final year project at Maulana Abul Kalam Azad University of Technology (formerly WBUT.). The group consists of:
 * Debayan De
 * Rohit Das
 * Rudra Nil Basu
